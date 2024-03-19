@@ -9,9 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct HomePageView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -29,5 +27,4 @@ struct HomePageView: View {
 
 #Preview {
     HomePageView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

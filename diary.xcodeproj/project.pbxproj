@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E704FF82B96DD44009D782B /* diaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E704FF72B96DD44009D782B /* diaryApp.swift */; };
-		8E704FFA2B96DD44009D782B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E704FF92B96DD44009D782B /* HomeView.swift */; };
+		8E704FFA2B96DD44009D782B /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E704FF92B96DD44009D782B /* HomePageView.swift */; };
 		8E704FFC2B96DD44009D782B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E704FFB2B96DD44009D782B /* Item.swift */; };
 		8E704FFE2B96DD45009D782B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E704FFD2B96DD45009D782B /* Assets.xcassets */; };
 		8E7050012B96DD45009D782B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7050002B96DD45009D782B /* Preview Assets.xcassets */; };
@@ -18,6 +18,7 @@
 		8E7050242B96E95C009D782B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7050232B96E95C009D782B /* CircleImage.swift */; };
 		8E7050262B96EB1C009D782B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7050252B96EB1C009D782B /* MapView.swift */; };
 		8EC52C4F2BA953E800ED09C2 /* LoginPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC52C4E2BA953E800ED09C2 /* LoginPageView.swift */; };
+		8EC52C512BA95DD600ED09C2 /* NewsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC52C502BA95DD600ED09C2 /* NewsPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 /* Begin PBXFileReference section */
 		8E704FF42B96DD44009D782B /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E704FF72B96DD44009D782B /* diaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diaryApp.swift; sourceTree = "<group>"; };
-		8E704FF92B96DD44009D782B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8E704FF92B96DD44009D782B /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		8E704FFB2B96DD44009D782B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8E704FFD2B96DD45009D782B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E7050002B96DD45009D782B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		8E7050232B96E95C009D782B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		8E7050252B96EB1C009D782B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8EC52C4E2BA953E800ED09C2 /* LoginPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageView.swift; sourceTree = "<group>"; };
+		8EC52C502BA95DD600ED09C2 /* NewsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +143,9 @@
 		8EC52C4D2BA9532B00ED09C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8E704FF92B96DD44009D782B /* HomeView.swift */,
+				8E704FF92B96DD44009D782B /* HomePageView.swift */,
 				8EC52C4E2BA953E800ED09C2 /* LoginPageView.swift */,
+				8EC52C502BA95DD600ED09C2 /* NewsPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,7 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E704FFA2B96DD44009D782B /* HomeView.swift in Sources */,
+				8EC52C512BA95DD600ED09C2 /* NewsPageView.swift in Sources */,
+				8E704FFA2B96DD44009D782B /* HomePageView.swift in Sources */,
 				8E7050242B96E95C009D782B /* CircleImage.swift in Sources */,
 				8E7050262B96EB1C009D782B /* MapView.swift in Sources */,
 				8E704FFC2B96DD44009D782B /* Item.swift in Sources */,

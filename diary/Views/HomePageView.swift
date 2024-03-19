@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct HomeView: View {
+struct HomePageView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
 
@@ -18,7 +18,9 @@ struct HomeView: View {
                 NavigationLink(destination: LoginPageView()) {
                     Text("로그인")
                 }
-                
+                NavigationLink(destination: NewsPageView()) {
+                    Text("뉴스")
+                }
             }
             .navigationTitle("diary")
         }
@@ -26,6 +28,6 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomePageView()
         .modelContainer(for: Item.self, inMemory: true)
 }

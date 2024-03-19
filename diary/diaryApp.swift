@@ -25,7 +25,7 @@ struct diaryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomePageView()
         }
         .modelContainer(sharedModelContainer)
     }

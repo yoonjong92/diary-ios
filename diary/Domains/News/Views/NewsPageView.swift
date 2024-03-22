@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NewsPageView: View {
-    @StateObject private var model = NewsModel.shared
+    @StateObject private var model = NewsViewModel.shared
         
     var body: some View {
         List{

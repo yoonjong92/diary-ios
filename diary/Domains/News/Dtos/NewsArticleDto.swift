@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NewsArticle: Decodable, Hashable{
+struct NewsArticleDto: Decodable, Hashable{
     let title: String
     let url: String
     let urlToImage: String?

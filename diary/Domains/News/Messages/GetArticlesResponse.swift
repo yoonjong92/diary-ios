@@ -8,5 +8,5 @@
 import Foundation
 
 class GetArticlesResponse : Decodable {
-    let articles: [NewsArticle]
+    let articles: [NewsArticleDto]
 }

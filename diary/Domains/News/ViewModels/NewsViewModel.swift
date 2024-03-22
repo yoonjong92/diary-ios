@@ -7,10 +7,10 @@
 
 import Foundation
 
-class NewsModel : ObservableObject {
-    static let shared = NewsModel()
+class NewsViewModel : ObservableObject {
+    static let shared = NewsViewModel()
     private init() { }
-    @Published var posts = [NewsArticle]()
+    @Published var posts = [NewsArticleDto]()
     
     
     func fetchData(){

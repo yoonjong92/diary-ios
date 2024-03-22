@@ -7,6 +7,6 @@
 
 import Foundation
 
-class GetArticlesResponse : Decodable {
+struct GetArticlesResponse : Decodable {
     let articles: [NewsArticleDto]
 }

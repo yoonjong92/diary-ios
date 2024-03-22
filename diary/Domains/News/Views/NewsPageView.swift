@@ -11,13 +11,12 @@ struct NewsPageView: View {
     @StateObject private var model = NewsModel.shared
         
     var body: some View {
-        NavigationView{
-            List{
-                ForEach(model.posts, id: \.self) { result in
-                    Text(result.title)
-                }
-            }.navigationTitle("뉴스 둘러보기")
-        }.onAppear {
+        List{
+            ForEach(model.posts, id: \.self) { result in
+                Text(result.title)
+            }
+        }.navigationTitle("뉴스 둘러보기")
+        .onAppear {
             model.fetchData()
         }
     }

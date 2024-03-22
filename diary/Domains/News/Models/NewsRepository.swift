@@ -12,11 +12,10 @@ class NewsModel : ObservableObject {
     private init() { }
     @Published var posts = [NewsArticle]()
     
-    private let apiKey = Bundle.main.object(forInfoDictionaryKey: "75f749b63b1b44349c3c738612d2db04") as? String
     
     func fetchData(){
         
-        guard let apiKey = apiKey else { return }
+        let apiKey = "75f749b63b1b44349c3c738612d2db04"
         
         guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=kr&apiKey=\(apiKey)") else{
             return

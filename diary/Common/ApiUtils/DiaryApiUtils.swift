@@ -9,7 +9,9 @@ import Foundation
 
 class DiaryApiUtils {
     
-    static let host = "http://localhost"
+    static let scheme = "http"
+    static let host = "localhost"
+    static let port = 8080
     
     static func get<T>(path: String, params: Dictionary<String,String>, completion: @escaping (T) -> Void) where T : Decodable {
         
@@ -49,7 +51,9 @@ class DiaryApiUtils {
     static func post<T>(path: String, body: Encodable, completion: @escaping (T) -> Void) where T : Decodable {
         
         var components = URLComponents()
+        components.scheme = scheme
         components.host = host
+        components.port = port
         components.path = path
         
         guard let url = components.url else {
@@ -67,12 +71,17 @@ class DiaryApiUtils {
             // Error: Unable to encode request parameters
         }
         
-        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+        let task = URLSession.shared.dataTask(with: request) { data, urlResponse, error in
             if let data = data {
-                let response = try? JSONDecoder().decode(T.self, from: data)
+                print(urlResponse)
+                let outputStr  = String(data: data, encoding: String.Encoding.utf8)
+                                
+                print(outputStr);
+                
+                let response = try? JSONDecoder().decode(ApiResponse<T>.self, from: data)
                 
                 if let response = response {
-                    completion(response)
+                    completion(response.data)
                 } else {
                     // Error: Unable to decode response JSON
                 }

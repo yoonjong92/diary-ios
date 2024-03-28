@@ -14,6 +14,7 @@
 		8E70500B2B96DD45009D782B /* diaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70500A2B96DD45009D782B /* diaryTests.swift */; };
 		8E7050152B96DD45009D782B /* diaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7050142B96DD45009D782B /* diaryUITests.swift */; };
 		8E7050172B96DD45009D782B /* diaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7050162B96DD45009D782B /* diaryUITestsLaunchTests.swift */; };
+		8E90ED212BB51E8200B98F87 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90ED202BB51E8200B98F87 /* ApiResponse.swift */; };
 		8EA013882BAD6C7E00159BD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA013872BAD6C7E00159BD0 /* LoginViewModel.swift */; };
 		8EA0138B2BAD6E0300159BD0 /* DiaryApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA0138A2BAD6E0300159BD0 /* DiaryApiUtils.swift */; };
 		8EA013902BAD741000159BD0 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA0138F2BAD741000159BD0 /* LoginAction.swift */; };
@@ -54,6 +55,7 @@
 		8E7050102B96DD45009D782B /* diaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = diaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7050142B96DD45009D782B /* diaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diaryUITests.swift; sourceTree = "<group>"; };
 		8E7050162B96DD45009D782B /* diaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8E90ED202BB51E8200B98F87 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		8EA013872BAD6C7E00159BD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8EA0138A2BAD6E0300159BD0 /* DiaryApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryApiUtils.swift; sourceTree = "<group>"; };
 		8EA0138F2BAD741000159BD0 /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 			path = diaryUITests;
 			sourceTree = "<group>";
 		};
+		8E90ED1F2BB51E6B00B98F87 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				8E90ED202BB51E8200B98F87 /* ApiResponse.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
 		8EA013822BAD6AB500159BD0 /* Dtos */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		8EA013892BAD6DF700159BD0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8E90ED1F2BB51E6B00B98F87 /* Messages */,
 				8EA0138D2BAD6EEE00159BD0 /* ApiUtils */,
 			);
 			path = Common;
@@ -404,6 +415,7 @@
 				8EA013952BAD78C700159BD0 /* LoginResponse.swift in Sources */,
 				8E704FFA2B96DD44009D782B /* HomePageView.swift in Sources */,
 				8EC52C552BA9656E00ED09C2 /* NewsViewModel.swift in Sources */,
+				8E90ED212BB51E8200B98F87 /* ApiResponse.swift in Sources */,
 				8EA013882BAD6C7E00159BD0 /* LoginViewModel.swift in Sources */,
 				8E704FF82B96DD44009D782B /* diaryApp.swift in Sources */,
 				8EA013902BAD741000159BD0 /* LoginAction.swift in Sources */,

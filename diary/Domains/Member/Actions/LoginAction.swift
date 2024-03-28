@@ -12,6 +12,6 @@ struct LoginAction {
     var parameters: LoginRequest
     
     func call(completion: @escaping (LoginResponse) -> Void) {
-        DiaryApiUtils.post(path: "api/member/login", body: parameters, completion: completion)
+        DiaryApiUtils.post(path: "/api/member/login", body: parameters, completion: completion)
     }
 }
